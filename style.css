@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --page-bg: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-family: 'Karla';
+    font-size: 16px;
+    background: var(--Light-Gray);
+    /* max-width: 35rem; */
+    margin: 0 auto;
+    color: var(--Light-Gray);
+}
+
+main {
+    margin: 5rem auto;
+    max-width: 19.5rem;
+    box-shadow: 1px 0px 6px 0px var(--Grayish-Blue);
+    border-radius: 0.4rem;
+}
+
+.header-card {
+    background: white;
+    padding: 0.5rem 1rem;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+
+h1 {
+    color: var(--page-bg);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.bold-text {
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.text { color: var(--Grayish-Blue); }
+
+.footer-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.left_side {
+    background: var(--page-bg);
+    padding: 0.5rem 1rem;
+}
+
+h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.dollar {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin: -0.5rem 0;
+}
+
+.left_side span {
+    font-size: 15px;
+    font-weight: 100;
+    position: relative;
+    top: -0.5rem;
+    color: var(--Light-Gray);
+}
+
+button {
+    background: var(--Bright-Yellow);
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.right_side {
+    background: var(--Grayish-Blue);
+    padding: 1rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+@media (min-width: 768px) {
+    main { max-width: 40rem; }
+
+    .footer-card { flex-direction: row; }
+
+    .left_side {
+        width: 50%;
+        border-bottom-left-radius: 0.4rem;
+    }
+
+    .right_side {
+        width: 50%;
+        border-bottom-left-radius: inherit;
+    }
+}
+
+
+
+
+/*
+@media (min-width: 56rem) {
+    .footer-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+*/
